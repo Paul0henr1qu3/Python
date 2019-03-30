@@ -5,42 +5,31 @@ Simples jogo de forca.
 '''
 import random
 
-'''
-import urllib
-f = urllib.urlopen('http://www.google.com.br/search?q=﻿'+ palavra_secreta)
+def apresentacao():
 
-    print(f)
-
-    f.close()
-    
-implementar uma função para buscar uma dica da palavra secreta no google. 
-
-
-'''
-
-def forca(lista_acertos):
-    print("|--------------------")
-    print("|                   |")
-    print("|")
-    print("|")
-    print("|")
-    print("|")
-    print(lista_acertos)
-
-
-def jogar():
     print('*****************************************')
     print('****** Bem-vindo ao jogo da Forca *******')
     print('*****************************************')
+
+def palavra():
 
     with open("palavras.txt", "r") as arquivo:
         palavras = [palavra.strip() for palavra in arquivo]
 
 
     palavra = random.choice(palavras)
-    palavra_secreta = palavra.upper()
 
-    letras_acertadas = ["_ " for letra in palavra_secreta ]
+    return palavra.upper()
+
+def inicializa(palavra):
+
+    return ["_ " for letra in palavra]
+
+def jogar():
+
+    apresentacao()
+    palavra_secreta = palavra()
+    letras_acertadas = inicializa(palavra_secreta)
 
     erros = 0
 
@@ -69,6 +58,7 @@ def jogar():
         forca(letras_acertadas)
 
     if "_ " not in letras_acertadas:
+        print(letras_acertadas)
         print("Você ganhou!")
     else:
         print("Você perdeu!")
