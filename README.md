@@ -3,22 +3,22 @@ Esse diretório contém tudo que estudei e desenvolvi utilizando a linguagem de 
 
 Diretórios: 
 
-python_brasil_exercicios:
+## python_brasil_exercicios:
 
-        - Exercícios resolvidos do site https://wiki.python.org.br/ListaDeExercicios
+- Exercícios resolvidos do site https://wiki.python.org.br/ListaDeExercicios
 
-python_challenge:
+## python_challenge:
 
-        - Desafios resolvidos do site: http://www.pythonchallenge.com/
+- Desafios resolvidos do site: http://www.pythonchallenge.com/
 
-python_jogos:
+## python_jogos:
 
-        - Esse diretório contém alguns jogos desenvolvidos nos cursos, Denvolvimento Web com Python da Alura, do livro Trilhas Python e do curso Python para zumbis. 
+- Esse diretório contém alguns jogos desenvolvidos nos cursos, Denvolvimento Web com Python da Alura, do livro Trilhas Python e do curso Python para zumbis. 
         
-python_util:
+## python_util:
 
-        - Alguns scripts muito úteis. 
+- Alguns scripts muito úteis. 
 
-python_para_zumbis:
+## python_para_zumbis:
 
-        - Tudo o que foi desenvolvido no curso Python para Zumbis: https://www.pycursos.com/python-para-zumbis/
+- Tudo o que foi desenvolvido no curso Python para Zumbis: https://www.pycursos.com/python-para-zumbis/
